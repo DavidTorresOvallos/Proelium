@@ -32,10 +32,7 @@ public class Entrada {
     @ManyToOne
     @JoinColumn(name="id_usuario", nullable = false)
     private Usuario usuario;
-
-    @OneToMany(mappedBy = "entrada")
-    private List<Entradas_categoria> entradasCategorias = new ArrayList<>();
-
+    
     @OneToMany(mappedBy = "entrada")
     private List<Comentarios> comentarios = new ArrayList<>();
 }
