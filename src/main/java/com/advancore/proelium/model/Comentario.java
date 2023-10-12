@@ -1,6 +1,8 @@
 package com.advancore.proelium.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
@@ -20,9 +22,10 @@ import java.util.*;
 @AllArgsConstructor
 
 @Entity
-@Table(name = "Comentarios")
-public class Comentarios {
+@Table(name = "Comentario")
+public class Comentario {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_comentario;
     private String comentario;
     private Date fecha_comentario;
