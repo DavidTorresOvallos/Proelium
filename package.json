@@ -1,0 +1,24 @@
+{
+  "name": "proelium-31",
+  "version": "1.0.0",
+  "description": "An e-commerce web application API",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "dev":"env-cmd -f ./config/dev.env nodemon src/app.js",
+    "start":"node src/app.js"
+  },
+  "author": "Jhon Acevedo, David Ovallos",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.5",
+    "validator": "^13.6.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.12"
+  }
+}
